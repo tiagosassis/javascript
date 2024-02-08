@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora v2.0</h1>
+    </header>
+    <main>
+        <div id="container">
+            <div id="resultado">
+                ...
+            </div>
+            <input class="input" type="number" name="number1" id="number1">
+            <input class="input" type="number" name="number2" id="number2">
+            <input type="button" value="somar" onclick="Soma()" id="buttom">
+            
+        </div>
+    </main>
+
+    <script>
+
+        function Soma() {
+            var tn1 = document.getElementById('number1')
+            var tn2 = document.getElementById('number2')
+            var resultado = document.getElementById('resultado')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+
+            var s = n1 + n2
+
+            resultado.innerText = s
+        }
+
+    </script>
+</body>
+</html>
