@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            margin: 10px;
+        }
+        input#txt{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificando velocidade</h1>
+    </header>
+    <body>
+        <div id="container">
+            <input type="number" name="txt" id="txt">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="resultado">...</div>
+    </body>
+
+    <script>
+
+        function verificar() {
+            var txt = document.querySelector('#txt')
+            if( txt.value === ''){
+                alert("o campo velocidade não pode estar vazio")
+            }else{
+                var result = document.querySelector('#resultado')
+                var vel = Number(txt.value)
+                if(vel > 110){
+                    result.innerHTML = "Está acima da velocidade permitida"
+                }
+                else{
+                    result.innerHTML = "Está dentro da velocidade permitida"
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
