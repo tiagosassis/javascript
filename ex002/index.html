@@ -10,9 +10,17 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa molestias libero repudiandae voluptatum quia. Pariatur quas fugiat alias, magni non accusamus atque quo quidem enim ut perspiciatis laudantium? Labore, saepe.</p>
 
     <script>
-        window.alert("Minha primeira mensagem");
-        window.prompt("Está gostando da linguágem?");
-        window.confirm("Vamos continuar então!");
+
+        /*
+            window.alert - mostra uma mensagem na página
+            window.prompt - faz uma pergunta na página
+            window.confirm - aparece uma mensagem e botões de confirmação
+            A concatenação aqui no JS é bem semelhante a do Java
+        */
+
+        var name = window.prompt("Qual seu nome?");
+        window.alert("É um prazer ti conhecer " + name);
+
     </script>
 </body>
 </html>
