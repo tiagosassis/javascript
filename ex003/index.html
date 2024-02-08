@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 1.0</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa molestias libero repudiandae voluptatum quia. Pariatur quas fugiat alias, magni non accusamus atque quo quidem enim ut perspiciatis laudantium? Labore, saepe.</p>
+
+    <script>
+
+    var x = Number(window.prompt("Digite um número:"));
+    var y = Number(window.prompt("Digite outro número:"));
+
+    /*
+        IMPORTANTE: por padrão o comando window retorna uma string
+        Então para calcular com números é necessário fazer a conversão para evitar que o js faça concatenação com o operador +
+    */
+
+    var soma = x + y;
+
+    window.confirm("A soma de " + x + " + " + y + " é " + soma + " correto?");
+
+    </script>
+</body>
+</html>
