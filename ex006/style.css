@@ -50,6 +50,10 @@ input{
     text-align: right;
 }
 
+input:hover{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+}
+
 #buttom{
     text-align: center;
 }
