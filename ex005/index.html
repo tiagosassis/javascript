@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 80vw;
+            margin: 0 auto;
+            height: 100vh;
+            background-image: linear-gradient(135deg, #88609F , #A879A7, #FEB191 , #FFB16E );
+        }
+
+        h1{
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        main{
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.500);
+            border-radius: 5px;
+            background-color: #88609F;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iniciando estudos com DOM</h1>
+    </header>
+    <main>
+        <h2>Oque é DOM</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, eveniet. Dicta rerum ab atque ducimus nemo. Mollitia asperiores nulla ex delectus magni minima aperiam iusto corrupti laudantium aliquid! Earum, maiores?
+        </p>
+        <p name="lorem2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quae neque recusandae a aut incidunt iusto obcaecati ducimus, tempora eveniet enim consequuntur voluptatem fugit ad voluptate distinctio pariatur doloribus optio!
+        </p>
+        
+        <div id="container">
+            <h2 class="titulo2">Qual sua importancia</h2>
+        
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero eveniet voluptas soluta accusantium ea officia, optio ex nemo, distinctio aut perferendis id similique aperiam odit neque, praesentium reprehenderit dolor!
+            </p>
+        </div>
+    </main>
+
+    <script>
+        
+        var a = document.getElementById('container')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseleave', sair)
+
+        function clicar() {
+            a.innerText = 'clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.style.transform = 'scale(1.005)'
+        }
+
+        function sair() {
+            a.style.transform = 'scale(1)'
+        }
+
+        var p1 = document.getElementById("container")
+        p1.innerHTML += "<p>Este novo parágrafo está sendo inserido via script</p>"
+        p1.style.background = '#6e4d81'
+        p1.style.padding = '10px'
+        
+        var t = document.getElementsByTagName('h1')[0]
+        t.style.color = 'white'
+        /* Toda vez que usar um get que está no plural, deve ser indicado qual tag pegar atraves do indice com [] */
+
+        var t2 = document.getElementsByClassName('titulo2')[0]
+        t2.style.color = 'white'
+
+        var p2 = document.getElementsByName('lorem2')[0]
+        p2.style.fontStyle = 'italic'
+
+        
+
+    </script>
+</body>
+</html>
