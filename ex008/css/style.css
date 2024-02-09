@@ -31,7 +31,6 @@ body{
 main{
     margin: auto;
     padding: 10px;
-    height: 50vh;
     width: 50vw;
     background-color: white;
     border-radius: 10px;
@@ -40,7 +39,11 @@ main{
 
 fieldset{
     border-color: transparent;
-    margin: 20px;
+    margin: 20px 0px;
+}
+
+div#resultado{
+    text-align: center;
 }
 
 footer{
