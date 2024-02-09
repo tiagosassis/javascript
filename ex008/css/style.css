@@ -42,8 +42,16 @@ fieldset{
     margin: 20px 0px;
 }
 
-div#resultado{
+#imasc, #ifem{
+    margin-left: 20px;
+}
+
+div{
     text-align: center;
+}
+
+img{
+    border-radius: 50%;
 }
 
 footer{
