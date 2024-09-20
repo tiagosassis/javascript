@@ -57,3 +57,17 @@ span{
     border-radius: 10px;
     width: 275px;
 }
+
+@keyframes Animation {
+    0%{
+        scale: 1;
+    }
+
+    50%{
+        scale: .8;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
