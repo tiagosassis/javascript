@@ -9,7 +9,7 @@ buttons.addEventListener('click', (e)=>{
     else{
         display.innerHTML += e.target.innerText
     }
-    console.log(e.currentTarget)
+    console.log(e.target)
 })
 
 
