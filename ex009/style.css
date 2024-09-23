@@ -35,7 +35,7 @@ body{
 .flex-item{
     color: black;
     height: 75px;
-    flex: 0 1 75px;
+    flex: 0 1 150px;
     margin: 5px;
     border-radius: 10px;
     background-color: orange;
